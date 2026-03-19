@@ -1,0 +1,2055 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Honey Dry Cleaning｜宅配布団クリーニング専門店</title>
+<meta name="description" content="他店で断られた特殊汚れも完全除菌・復元。自社工場の職人による本気の手洗いで、新品のようなふっくら感を取り戻す宅配布団クリーニング「Honey Dry Cleaning」。追加料金ゼロ・往復送料込み！">
+<meta property="og:title" content="Honey Dry Cleaning｜宅配布団クリーニング専門店">
+<meta property="og:description" content="追加料金ゼロ！自社工場の本気の手洗いで、布団の中身から新品へ復元します。">
+<meta property="og:type" content="website">
+<meta name="google-site-verification" content="rvB4hyBYKCbrch_sriHtQ42dxWMrlKDFperPzu-z7Rk" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@400;600;700;900&family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
+body {
+  color: #1d2a35;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.8;
+  background: #f8fbfd;
+}
+img { display: block; max-width: 100%; }
+button { font-family: 'Noto Sans JP', sans-serif; touch-action: manipulation; }
+
+/* ===== VARIABLES ===== */
+:root {
+  --blue: #0099bb;
+  --blue-d: #007a96;
+  --blue-l: #e8f7fb;
+  --blue-m: #c8ebf4;
+  --navy: #1d3c52;
+  --navy-l: #2c5270;
+  --coral: #e8624a;
+  --amber: #f0a030;
+  --amber-d: #d88c20;
+  --cream: #fafcfd;
+  --border: #c5e5ef;
+  --text: #1d2a35;
+  --text-m: #4a6070;
+  --text-l: #7a95a5;
+  --white: #ffffff;
+  --rad: 20px;
+  --rad-sm: 12px;
+  --shadow: 0 8px 40px rgba(0,120,160,0.08);
+  --shadow-l: 0 20px 60px rgba(0,120,160,0.12);
+}
+
+/* ===== BACKGROUND ===== */
+.bg-base {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 15% 20%, rgba(0,153,187,0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 60% at 85% 70%, rgba(0,153,187,0.05) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 50% 100%, rgba(200,235,244,0.3) 0%, transparent 60%),
+    #f8fbfd;
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* ===== PC WRAPPER ===== */
+#wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+  background: transparent;
+  padding-bottom: calc(90px + env(safe-area-inset-bottom));
+}
+
+/* ===== BUBBLE ANIMATION ===== */
+.bubbles-container {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.bubble {
+  position: absolute;
+  bottom: -150px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 30%, rgba(255,255,255,0.95), rgba(0,168,210,0.12));
+  border: 1.5px solid rgba(0,168,210,0.18);
+  box-shadow:
+    inset 0 0 20px rgba(255,255,255,0.8),
+    inset 3px 3px 8px rgba(255,255,255,0.6),
+    0 4px 14px rgba(0,168,210,0.1);
+  animation: floatUp infinite ease-in-out;
+}
+.bubble:nth-child(1)  { left:5%;  width:40px;  height:40px;  animation-duration:12s; animation-delay:0s; }
+.bubble:nth-child(2)  { left:15%; width:80px;  height:80px;  animation-duration:18s; animation-delay:2s; }
+.bubble:nth-child(3)  { left:25%; width:30px;  height:30px;  animation-duration:10s; animation-delay:4s; }
+.bubble:nth-child(4)  { left:40%; width:60px;  height:60px;  animation-duration:22s; animation-delay:0s; }
+.bubble:nth-child(5)  { left:60%; width:50px;  height:50px;  animation-duration:15s; animation-delay:5s; }
+.bubble:nth-child(6)  { left:75%; width:90px;  height:90px;  animation-duration:25s; animation-delay:1s; }
+.bubble:nth-child(7)  { left:85%; width:35px;  height:35px;  animation-duration:14s; animation-delay:6s; }
+.bubble:nth-child(8)  { left:92%; width:70px;  height:70px;  animation-duration:19s; animation-delay:3s; }
+.bubble:nth-child(9)  { left:-2%; width:100px; height:100px; animation-duration:28s; animation-delay:7s; }
+.bubble:nth-child(10) { left:98%; width:55px;  height:55px;  animation-duration:16s; animation-delay:8s; }
+@keyframes floatUp {
+  0%   { bottom:-150px; transform:translateX(0) scale(0.9);  opacity:0; }
+  5%   { opacity:0.7; }
+  90%  { opacity:0.5; }
+  100% { bottom:110vh;  transform:translateX(10px) scale(1); opacity:0; }
+}
+@media (max-width:767px) {
+  .bubble { opacity:0.4; }
+  .bubble:nth-child(n+6) { display:none; }
+}
+
+/* ===== STICKY CTA BAR ===== */
+#bar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: calc(68px + env(safe-area-inset-bottom));
+  padding-bottom: env(safe-area-inset-bottom);
+  box-shadow: 0 -2px 30px rgba(0,80,120,0.15);
+}
+.bar-call {
+  flex: 0 0 50%;
+  background: var(--navy);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-decoration: none; color: #fff; gap: 3px;
+  transition: background .2s;
+}
+.bar-call:active { background: #0f2535; }
+.bar-call-lbl { font-size: 10px; letter-spacing: .12em; color: rgba(255,255,255,.7); }
+.bar-call-num { font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 26px; letter-spacing: .05em; font-weight: 600; }
+.bar-web {
+  flex: 0 0 50%;
+  background: linear-gradient(135deg, var(--amber) 0%, var(--coral) 100%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-decoration: none; color: #fff; font-weight: 900; font-size: 15px; letter-spacing: .12em;
+  transition: opacity .2s;
+}
+.bar-web:active { opacity: 0.85; }
+.bar-web-sub { font-size: 10px; font-weight: 400; opacity: 0.85; margin-top: 3px; letter-spacing: .02em; }
+
+/* ===== TOP RIBBON ===== */
+#ribbon {
+  background: linear-gradient(90deg, var(--navy) 0%, var(--navy-l) 100%);
+  text-align: center; padding: 11px 16px;
+  font-size: 12px; font-weight: 500; color: rgba(255,255,255,.85);
+  letter-spacing: .08em;
+  overflow: hidden; position: relative;
+}
+.ribbon-scroll {
+  display: inline-flex; gap: 48px; white-space: nowrap;
+  animation: ribbonMove 18s linear infinite;
+}
+@keyframes ribbonMove { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+#ribbon strong { color: #fff; font-weight: 900; }
+#ribbon .dot { color: rgba(255,255,255,.35); margin: 0 4px; }
+
+/* ===== NAV ===== */
+#nav {
+  background: rgba(255,255,255,0.97);
+  border-bottom: 1px solid rgba(0,153,187,0.12);
+  padding: 11px 16px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 800;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  gap: 6px;
+}
+.nav-logo-wrap { display: flex; flex-direction: column; gap: 2px; flex-shrink: 0; }
+.nav-logo {
+  font-family: 'DM Sans', 'Noto Sans JP', sans-serif;
+  font-size: 18px; color: var(--navy); font-weight: 700; letter-spacing: .03em;
+  line-height: 1;
+}
+.nav-logo-sub {
+  font-size: 9px; letter-spacing: .18em; color: var(--blue); font-weight: 700;
+}
+.nav-review {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--blue-l); border: 1px solid var(--blue-m);
+  border-radius: 30px; padding: 5px 10px;
+  font-size: 11px; font-weight: 700; color: var(--navy);
+  flex-shrink: 0;
+}
+.nav-review-stars { color: #f0a030; font-size: 12px; letter-spacing: 1px; }
+.nav-tel {
+  text-decoration: none; color: var(--navy);
+  font-size: 10px; letter-spacing: .06em; text-align: right; flex-shrink: 0;
+}
+.nav-tel strong {
+  font-family: 'DM Sans', 'Noto Sans JP', sans-serif;
+  font-size: 17px; display: block; letter-spacing: .02em; font-weight: 700;
+}
+@media (max-width: 480px) {
+  #nav { padding: 10px 14px; }
+  .nav-review { display: none; }
+  .nav-logo { font-size: 15px; }
+  .nav-logo-sub { display: none; }
+  .nav-tel strong { font-size: 15px; }
+}
+
+/* ===== TOP MENU ===== */
+.top-menu {
+  display: flex;
+  background: rgba(255,255,255,0.7);
+  border-bottom: 1px solid rgba(0,153,187,0.1);
+  backdrop-filter: blur(8px);
+}
+.tm-item {
+  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 14px 4px; text-decoration: none;
+  border-right: 1px solid rgba(0,153,187,0.1); transition: background .2s;
+  position: relative;
+}
+.tm-item::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+  background: var(--blue); transform: scaleX(0); transition: transform .25s;
+}
+.tm-item:hover::after, .tm-item:active::after { transform: scaleX(1); }
+.tm-item:last-child { border-right: none; }
+.tm-item:hover { background: var(--blue-l); }
+.tm-icon { width: 24px; height: 24px; margin-bottom: 4px; color: var(--blue); }
+.tm-text { color: var(--navy); font-size: 10px; font-weight: 700; text-align: center; line-height: 1.3; letter-spacing: .01em; }
+@media (max-width: 360px) {
+  .tm-item { padding: 12px 2px; }
+  .tm-icon { width: 22px; height: 22px; }
+  .tm-text { font-size: 9px; }
+}
+
+/* ===== HERO ===== */
+#hero {
+  position: relative;
+  min-height: 70svh;
+  background: #1a3040 url('image/baby-main.png') center center / cover no-repeat;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  overflow: hidden;
+}
+#hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10,25,40,0.25) 0%,
+    rgba(10,25,40,0.15) 40%,
+    rgba(10,25,40,0.7) 85%,
+    rgba(10,25,40,0.88) 100%
+  );
+  z-index: 1;
+}
+
+/* decorative circle */
+#hero::after {
+  content: '';
+  position: absolute;
+  top: -80px; right: -80px;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.06);
+  z-index: 1;
+}
+
+.hero-in {
+  position: relative; z-index: 2;
+  padding: 32px 20px 40px;
+}
+
+.hero-urgency {
+  display: inline-block;
+  background: rgba(232, 98, 74, 0.9);
+  color: #fff;
+  font-size: 10px; font-weight: 700; letter-spacing: .06em;
+  padding: 6px 14px; border-radius: 30px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(255,255,255,0.3);
+  opacity: 0; animation: fadeUp .7s .1s ease forwards;
+  max-width: 100%; word-break: keep-all;
+}
+
+.hero-eyebrow {
+  font-size: 10px; font-weight: 700; letter-spacing: .2em;
+  color: rgba(255,255,255,0.6); text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0; animation: fadeUp .7s .2s ease forwards;
+}
+
+.hero-h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(22px, 6.5vw, 44px);
+  font-weight: 900; line-height: 1.55;
+  color: #fff; margin-bottom: 14px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  opacity: 0; animation: fadeUp .7s .3s ease forwards;
+}
+.hero-h1 em { font-style: normal; color: #9ee8f5; }
+
+.hero-desc {
+  font-size: 13px; color: rgba(255,255,255,0.82); line-height: 1.8;
+  margin-bottom: 20px; font-weight: 400;
+  opacity: 0; animation: fadeUp .7s .45s ease forwards;
+}
+
+/* hero trust strip */
+.hero-trust {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;
+  opacity: 0; animation: fadeUp .7s .55s ease forwards;
+}
+.hero-trust-item {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 30px; padding: 6px 12px;
+  font-size: 11px; font-weight: 700; color: #fff;
+  display: flex; align-items: center; gap: 5px;
+}
+.hero-trust-item span { color: #9ee8f5; }
+
+/* hero CTA */
+.hero-ctas {
+  display: flex; gap: 10px; flex-direction: column;
+  opacity: 0; animation: fadeUp .7s .65s ease forwards;
+}
+@media (min-width: 480px) {
+  .hero-ctas { flex-direction: row; flex-wrap: wrap; }
+}
+.hero-btn-primary {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: linear-gradient(135deg, var(--amber), var(--coral));
+  color: #fff; text-decoration: none;
+  padding: 16px 24px; border-radius: 50px;
+  font-size: 15px; font-weight: 900; letter-spacing: .06em;
+  box-shadow: 0 8px 30px rgba(240,160,48,0.4);
+  transition: transform .2s, box-shadow .2s;
+  border: 2px solid rgba(255,255,255,0.25);
+  width: 100%;
+}
+@media (min-width: 480px) { .hero-btn-primary { width: auto; } }
+.hero-btn-primary:active { transform: translateY(2px); box-shadow: 0 4px 15px rgba(240,160,48,0.3); }
+.hero-btn-secondary {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(8px);
+  color: #fff; text-decoration: none;
+  padding: 14px 22px; border-radius: 50px;
+  font-size: 14px; font-weight: 700; letter-spacing: .05em;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  transition: background .2s;
+  width: 100%;
+}
+@media (min-width: 480px) { .hero-btn-secondary { width: auto; } }
+.hero-btn-secondary:active { background: rgba(255,255,255,0.22); }
+
+@keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+
+/* ===== TRUST BAR ===== */
+.trust-bar {
+  background: var(--navy);
+  padding: 0 28px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 3px solid var(--blue);
+}
+.trust-item {
+  padding: 20px 8px;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+.trust-item:last-child { border-right: none; }
+.trust-fig {
+  font-family: 'DM Sans', 'Noto Sans JP', sans-serif;
+  font-size: 28px; font-weight: 600; color: #9ee8f5;
+  line-height: 1;
+}
+.trust-label { font-size: 10px; color: rgba(255,255,255,0.65); letter-spacing: .08em; font-weight: 500; }
+@media (max-width: 767px) {
+  .trust-bar { grid-template-columns: repeat(2, 1fr); padding: 0; }
+  .trust-item { padding: 14px 8px; }
+  .trust-item:nth-child(2) { border-right: none; }
+  .trust-item:nth-child(3) { border-right: 1px solid rgba(255,255,255,0.08); }
+  .trust-item:nth-child(1), .trust-item:nth-child(2) { border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .trust-fig { font-size: 22px; }
+  .trust-label { font-size: 9px; }
+}
+
+/* ===== SECTIONS ===== */
+.sec       { padding: 80px 36px; }
+.sec-alt   { background: rgba(255,255,255,0.65); padding: 80px 36px; }
+.sec-soft  { background: var(--blue-l); padding: 80px 36px; }
+@media (max-width:767px) {
+  .sec, .sec-alt, .sec-soft { padding: 56px 16px; }
+}
+
+/* Section header */
+.sec-eyebrow {
+  display: block; font-size: 11px; letter-spacing: .3em; font-weight: 700;
+  color: var(--blue); text-transform: uppercase; margin-bottom: 10px;
+  text-align: center;
+}
+.sec-h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(22px, 5.5vw, 34px);
+  font-weight: 900; line-height: 1.5;
+  color: var(--navy); text-align: center;
+  margin-bottom: 12px;
+  position: relative; padding-bottom: 20px;
+}
+.sec-h2::after {
+  content: ''; position: absolute;
+  bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 40px; height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--blue-m));
+  border-radius: 2px;
+}
+.sec-h2 em { font-style: normal; color: var(--blue); }
+.sec-lead {
+  font-size: 15px; line-height: 1.9; color: var(--text-m);
+  text-align: center; margin-bottom: 48px; font-weight: 400;
+  max-width: 640px; margin-left: auto; margin-right: auto;
+}
+
+/* ===== PROBLEM SECTION ===== */
+.prob-inner {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--border);
+  border-radius: var(--rad);
+  padding: 40px 32px;
+  box-shadow: var(--shadow);
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.prob-img { width: 80px; flex-shrink: 0; }
+.prob-bubbles {
+  display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+}
+.prob-bubble {
+  width: 140px; height: 140px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; font-size: 13px; font-weight: 700; line-height: 1.5;
+  padding: 16px;
+}
+.pb-blue {
+  background: linear-gradient(135deg, var(--blue) 0%, var(--blue-d) 100%);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0,153,187,0.25);
+}
+.pb-light {
+  background: var(--blue-m);
+  color: var(--navy);
+  border: 1.5px solid var(--border);
+}
+@media (max-width: 767px) {
+  .prob-inner { padding: 24px 16px; gap: 16px; }
+  .prob-bubble { width: 110px; height: 110px; font-size: 11px; padding: 12px; }
+}
+
+/* ===== PROBLEM CARDS ===== */
+.prob-alert {
+  background: rgba(255,255,255,0.8);
+  border-left: 4px solid var(--coral);
+  border-radius: 0 var(--rad-sm) var(--rad-sm) 0;
+  padding: 28px 28px 28px 24px;
+  margin-bottom: 36px;
+  font-size: 15px; line-height: 1.9; color: var(--text-m); font-weight: 400;
+  max-width: 800px; margin-left: auto; margin-right: auto;
+}
+
+.worry-grid {
+  display: grid; grid-template-columns: 1fr;
+  gap: 16px; max-width: 800px; margin: 0 auto;
+}
+@media (min-width:768px) { .worry-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.worry-card {
+  background: rgba(255,255,255,0.9);
+  border: 1px solid var(--border);
+  border-radius: var(--rad); overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform .25s, box-shadow .25s;
+}
+.worry-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-l); }
+.worry-card-head {
+  background: linear-gradient(135deg, var(--blue-l), var(--blue-m));
+  padding: 16px 20px; font-size: 15px; font-weight: 700; color: var(--navy);
+  display: flex; align-items: center; gap: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.worry-num {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--blue); color: #fff;
+  font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 17px; font-weight: 600;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.worry-body { padding: 20px; font-size: 14px; line-height: 1.8; color: var(--text-m); }
+
+/* ===== FEATURES ===== */
+.feat-intro {
+  background: rgba(255,255,255,0.85);
+  border: 1px solid var(--border);
+  border-radius: var(--rad);
+  padding: 28px 20px;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow);
+  max-width: 800px; margin-left: auto; margin-right: auto;
+}
+@media (min-width: 768px) {
+  .feat-intro { padding: 40px 36px; }
+}
+.feat-intro-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(19px, 4vw, 23px); font-weight: 900; color: var(--navy);
+  text-align: center; margin-bottom: 24px; line-height: 1.6;
+}
+.feat-intro-body {
+  font-size: 15px; line-height: 2; color: var(--text-m);
+}
+.feat-intro-body + .feat-intro-body { margin-top: 16px; }
+.feat-intro strong { color: var(--blue); font-weight: 700; }
+
+.feat-grid {
+  display: grid; grid-template-columns: 1fr; gap: 16px;
+  max-width: 800px; margin: 0 auto;
+}
+@media (min-width:768px) { .feat-grid { grid-template-columns: 1fr 1fr; } }
+
+.feat-card {
+  background: rgba(255,255,255,0.9);
+  border: 1px solid var(--border); border-radius: var(--rad);
+  display: flex; overflow: hidden; box-shadow: var(--shadow);
+  transition: transform .25s, box-shadow .25s;
+}
+.feat-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-l); }
+.feat-icon-col {
+  width: 88px; flex-shrink: 0;
+  background: linear-gradient(180deg, var(--blue-l) 0%, var(--blue-m) 100%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 8px; padding: 20px 8px;
+  border-right: 1px solid var(--border);
+}
+.feat-icon-svg { width: 36px; height: 36px; color: var(--blue); }
+.feat-icon-label { font-size: 10px; color: var(--blue-d); font-weight: 700; letter-spacing: .04em; text-align: center; line-height: 1.4; }
+.feat-body { padding: 20px 22px; }
+.feat-title { font-size: 16px; font-weight: 900; color: var(--navy); margin-bottom: 8px; }
+.feat-text { font-size: 13px; line-height: 1.8; color: var(--text-m); }
+
+/* ===== SOLUTION LEAD ===== */
+.solution-lead {
+  font-family: 'Noto Serif JP', serif;
+  font-size: clamp(22px, 5vw, 28px); font-weight: 900; color: var(--navy);
+  text-align: center; margin-bottom: 32px; line-height: 1.6;
+}
+.solution-lead em { font-style: normal; color: var(--blue); }
+
+/* ===== CTA BLOCK ===== */
+.cta-block {
+  margin: 52px auto 0;
+  max-width: 600px;
+  text-align: center;
+}
+.cta-label {
+  display: inline-block;
+  background: rgba(240,160,48,0.1); border: 1px solid rgba(240,160,48,0.3);
+  color: var(--amber-d); font-size: 13px; font-weight: 700; letter-spacing: .08em;
+  padding: 7px 20px; border-radius: 30px; margin-bottom: 14px;
+}
+.cta-btn-primary {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  background: linear-gradient(135deg, var(--amber) 0%, var(--coral) 100%);
+  color: #fff; text-decoration: none;
+  padding: 20px 24px; border-radius: 14px;
+  font-size: 17px; font-weight: 900; letter-spacing: .06em;
+  box-shadow: 0 10px 32px rgba(240,160,48,0.3);
+  margin-bottom: 12px;
+  transition: transform .2s, box-shadow .2s;
+  border: none; cursor: pointer; width: 100%;
+  border-bottom: 4px solid rgba(0,0,0,0.1);
+}
+.cta-btn-primary:active { transform: translateY(3px); border-bottom-width: 1px; box-shadow: 0 4px 16px rgba(240,160,48,0.2); }
+.cta-btn-sub {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: rgba(255,255,255,0.9); border: 1.5px solid var(--border);
+  color: var(--navy); text-decoration: none;
+  padding: 16px 24px; border-radius: 12px;
+  font-size: 15px; font-weight: 700;
+  box-shadow: var(--shadow);
+  transition: background .2s;
+}
+.cta-btn-sub:active { background: var(--blue-l); }
+.cta-btn-num { font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 22px; font-weight: 600; }
+.cta-hint { font-size: 12px; color: var(--text-l); margin-top: 10px; }
+
+/* ===== PRICING ===== */
+.pricing-zero {
+  background: linear-gradient(135deg, rgba(0,153,187,0.08), rgba(0,153,187,0.03));
+  border: 1.5px solid var(--border);
+  border-radius: var(--rad-sm); padding: 20px 24px;
+  font-size: 14px; color: var(--text-m); line-height: 1.8;
+  margin-bottom: 32px; font-weight: 400;
+  max-width: 800px; margin-left: auto; margin-right: auto;
+}
+.pricing-zero strong { color: var(--blue); font-weight: 700; }
+
+.plan-wrap { max-width: 800px; margin: 0 auto; }
+
+.plan-featured {
+  border: 2px solid var(--blue);
+  border-radius: var(--rad); overflow: hidden;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 16px 48px rgba(0,153,187,0.12);
+}
+.plan-badge {
+  background: linear-gradient(90deg, var(--blue), var(--blue-d));
+  color: #fff; font-size: 13px; font-weight: 700; letter-spacing: .1em;
+  padding: 12px 24px; text-align: center; display: block;
+}
+.plan-body { padding: 28px 24px 20px; }
+.plan-title { font-size: 16px; font-weight: 900; color: var(--navy); margin-bottom: 8px; }
+.plan-desc { font-size: 14px; color: var(--text-m); margin-bottom: 24px; line-height: 1.7; }
+
+.stepper-row {
+  display: flex; align-items: center;
+  border: 1.5px solid var(--border); border-radius: 10px; overflow: hidden;
+  width: fit-content; margin-bottom: 16px;
+}
+.sp-btn {
+  width: 52px; height: 52px; background: var(--blue-l); border: none;
+  font-size: 24px; font-weight: 700; color: var(--blue);
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background .15s; flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none; touch-action: manipulation;
+}
+.sp-btn:active { background: var(--blue-m); }
+.sp-val {
+  width: 60px; text-align: center;
+  font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 28px; color: var(--navy);
+  background: #fff; line-height: 52px;
+  border-left: 1px solid var(--border); border-right: 1px solid var(--border);
+  user-select: none;
+}
+.plan-cnt-label { font-size: 15px; color: var(--navy); font-weight: 700; }
+
+.plan-price-row { display: flex; align-items: baseline; gap: 6px; margin: 12px 0; }
+.plan-yen { font-size: 16px; color: var(--coral); font-weight: 700; }
+.plan-fig {
+  font-family: 'DM Sans', 'Noto Sans JP', sans-serif;
+  font-size: clamp(48px, 12vw, 68px); color: var(--coral); line-height: 1; font-weight: 600;
+}
+.plan-tax { font-size: 14px; color: var(--text-m); }
+.plan-note { font-size: 13px; color: var(--text-m); margin-bottom: 16px; line-height: 1.6; font-weight: 500; }
+.plan-tag {
+  display: inline-block; background: var(--blue-m); color: var(--blue-d);
+  font-size: 12px; font-weight: 700; padding: 5px 14px; letter-spacing: .08em;
+  border-radius: 5px; margin-bottom: 16px;
+}
+
+.plan-single-link {
+  font-size: 13px; color: var(--text-l); text-decoration: underline;
+  cursor: pointer; background: none; border: none; padding: 8px 0;
+  display: block; text-align: center; margin-top: 12px; font-weight: 500;
+}
+.plan-single {
+  border: 1.5px solid var(--border); border-radius: var(--rad);
+  background: rgba(255,255,255,0.9); padding: 20px 24px;
+  margin-top: 16px;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+}
+.plan-single-label { font-size: 14px; color: var(--text-m); font-weight: 600; }
+.plan-single-price { font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 32px; color: var(--text); font-weight: 600; }
+.plan-single-note { font-size: 13px; color: var(--text-l); width: 100%; }
+
+/* Options */
+.opt-section-title {
+  font-size: 15px; font-weight: 900; color: var(--navy);
+  padding: 16px 20px 16px; background: var(--blue-l);
+  border-top: 1.5px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  margin: 0; letter-spacing: .04em;
+}
+.opt-table {
+  border: 1.5px solid var(--border); border-radius: var(--rad); overflow: hidden;
+  margin-top: 20px; background: rgba(255,255,255,0.9);
+  max-width: 800px; margin-left: auto; margin-right: auto;
+}
+.opt-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px; border-bottom: 1px solid var(--border);
+  gap: 8px; flex-wrap: nowrap;
+}
+.opt-row:last-child { border-bottom: none; }
+.opt-info { flex: 1; min-width: 0; }
+.opt-name { display: block; font-size: 13px; font-weight: 700; color: var(--text); }
+.opt-unit { display: block; font-size: 11px; color: var(--text-l); margin-top: 2px; }
+.opt-stepper {
+  display: flex; align-items: center;
+  border: 1px solid var(--border); border-radius: 8px; overflow: hidden;
+}
+.opt-sp-btn {
+  width: 36px; height: 36px; background: var(--blue-l); border: none;
+  font-size: 18px; font-weight: 700; color: var(--blue); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  -webkit-tap-highlight-color: transparent; user-select: none; touch-action: manipulation;
+  transition: background .15s;
+}
+.opt-sp-btn:active { background: var(--blue-m); }
+.opt-sp-val {
+  width: 40px; text-align: center;
+  font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 20px; color: var(--navy);
+  background: #fff; border-left: 1px solid var(--border); border-right: 1px solid var(--border);
+  line-height: 36px; display: inline-block; user-select: none;
+}
+.opt-subtotal {
+  font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 18px; color: var(--navy);
+  min-width: 80px; text-align: right; flex-shrink: 0; margin-left: auto;
+}
+
+.total-bar {
+  background: var(--navy); color: #fff;
+  padding: 20px 24px; border-radius: 0 0 var(--rad) var(--rad);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+}
+.total-label { font-size: 12px; color: rgba(255,255,255,.7); font-weight: 500; text-align: center; letter-spacing: .08em; }
+.total-breakdown { font-size: 11px; color: rgba(255,255,255,.55); text-align: center; }
+.total-fig {
+  font-family: 'DM Sans', 'Noto Sans JP', sans-serif;
+  font-size: 40px; color: #9ee8f5; font-weight: 600;
+}
+.total-unit { font-size: 14px; color: rgba(255,255,255,.8); }
+@media (min-width:768px) {
+  .total-bar { flex-direction: row; justify-content: space-between; padding: 22px 32px; }
+  .opt-row { padding: 18px 24px; }
+  .opt-name { font-size: 15px; }
+  .opt-unit { font-size: 13px; }
+}
+.price-disclaimer { font-size: 12px; color: var(--text-l); margin-top: 14px; line-height: 1.7; text-align: center; }
+
+/* ===== FLOW ===== */
+.flow-grid { max-width: 800px; margin: 0 auto; }
+.flow-card {
+  display: flex; border: 1px solid var(--border); border-radius: var(--rad);
+  background: rgba(255,255,255,0.9); margin-bottom: 14px; overflow: hidden;
+  box-shadow: var(--shadow); position: relative;
+}
+.flow-card:not(:last-child)::before {
+  content: '';
+  position: absolute; bottom: -14px; left: 39px;
+  width: 2px; height: 14px;
+  background: var(--border); z-index: 2;
+}
+.flow-num {
+  width: 64px; flex-shrink: 0;
+  background: linear-gradient(180deg, var(--blue-l) 0%, var(--blue-m) 100%);
+  color: var(--blue); display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 32px; font-weight: 700;
+  border-right: 1px solid var(--border); align-self: stretch; padding: 20px 0;
+}
+.flow-body { padding: 22px 24px; }
+.flow-title { font-size: 17px; font-weight: 900; color: var(--navy); margin-bottom: 8px; }
+.flow-text { font-size: 14px; line-height: 1.8; color: var(--text-m); }
+
+/* ===== STORAGE ===== */
+.storage-card {
+  background: rgba(255,255,255,0.9); border: 1.5px solid var(--border);
+  border-radius: var(--rad); overflow: hidden;
+  max-width: 800px; margin: 24px auto 0;
+  box-shadow: var(--shadow);
+}
+.storage-head {
+  background: linear-gradient(135deg, var(--blue-l), var(--blue-m));
+  padding: 20px 24px; border-bottom: 1px solid var(--border);
+}
+.storage-head-title { font-size: 17px; font-weight: 900; color: var(--navy); }
+.storage-head-price { font-size: 13px; color: var(--text-m); margin-top: 5px; }
+.storage-body { padding: 28px 24px; }
+.storage-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.storage-item { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--text); line-height: 1.7; }
+.storage-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue); flex-shrink: 0; margin-top: 8px; }
+
+/* ===== REVIEWS ===== */
+.review-trust-badge {
+  display: flex; align-items: center; gap: 12px; justify-content: center;
+  margin-bottom: 36px; flex-wrap: wrap;
+}
+.rtb-item {
+  background: rgba(255,255,255,0.9); border: 1px solid var(--border);
+  border-radius: 50px; padding: 10px 20px;
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 700; color: var(--navy);
+  box-shadow: var(--shadow);
+}
+.rtb-stars { color: #f0a030; font-size: 16px; }
+.rtb-count { color: var(--text-l); font-size: 12px; font-weight: 400; }
+
+.review-grid {
+  display: flex; gap: 16px;
+  overflow-x: auto; scroll-snap-type: x mandatory;
+  padding-bottom: 20px; -webkit-overflow-scrolling: touch;
+}
+.review-grid::-webkit-scrollbar { height: 6px; }
+.review-grid::-webkit-scrollbar-track { background: var(--blue-l); border-radius: 3px; }
+.review-grid::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+.review-card {
+  background: rgba(255,255,255,0.95); border: 1px solid var(--border);
+  border-radius: var(--rad); overflow: hidden;
+  flex: 0 0 88%; max-width: 340px; scroll-snap-align: start;
+  box-shadow: var(--shadow);
+  transition: transform .25s;
+}
+.review-card:hover { transform: translateY(-4px); }
+.review-body { padding: 28px 24px; }
+.review-stars { color: #f0a030; font-size: 18px; letter-spacing: 2px; margin-bottom: 14px; }
+.review-text {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 15px; line-height: 1.9; color: var(--text); margin-bottom: 16px; font-weight: 600;
+}
+.review-author { font-size: 12px; color: var(--text-l); letter-spacing: .1em; }
+.review-reply {
+  margin-top: 18px; background: var(--blue-l);
+  border-left: 3px solid var(--blue); padding: 14px;
+  border-radius: 0 var(--rad-sm) var(--rad-sm) 0;
+}
+.reply-name { display: block; font-size: 11px; font-weight: 900; color: var(--navy); margin-bottom: 5px; letter-spacing: .08em; }
+.reply-text { font-size: 12px; line-height: 1.75; color: var(--text-m); }
+
+@media (min-width:768px) {
+  .review-grid { flex-wrap: wrap; overflow-x: visible; scroll-snap-type: none; padding-bottom: 0; }
+  .review-card { flex: 1 1 calc(50% - 16px); max-width: none; }
+}
+
+/* ===== COMPARISON ===== */
+.comp-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 800px; margin: 24px auto 0; }
+.comp-table {
+  width: 100%; border-collapse: collapse; font-size: 13px; min-width: 400px;
+  background: rgba(255,255,255,0.9);
+}
+.comp-table th, .comp-table td { border: 1px solid var(--border); padding: 14px 12px; text-align: center; vertical-align: middle; }
+.comp-table thead th { background: var(--navy); color: #fff; font-weight: 700; font-size: 13px; }
+.comp-table thead th.us { background: var(--blue); }
+.comp-table tbody th { background: var(--blue-l); font-weight: 700; text-align: center; color: var(--navy); font-size: 13px; }
+.comp-table td.g { color: var(--blue-d); font-weight: 900; font-size: 16px; }
+.comp-table td.y { color: var(--text-l); font-size: 13px; }
+.comp-table td.r { color: var(--text-m); font-size: 13px; }
+.comp-table td.hl { background: rgba(232,247,251,0.5); }
+.cbadge {
+  display: inline-block; background: var(--blue); color: #fff;
+  font-size: 10px; font-weight: 700; padding: 4px 8px; border-radius: 4px;
+  margin-top: 6px; letter-spacing: .04em;
+}
+
+/* ===== PROFILE ===== */
+.profile-card {
+  background: rgba(255,255,255,0.9); border: 1px solid var(--border);
+  border-radius: var(--rad); overflow: hidden;
+  box-shadow: var(--shadow); max-width: 800px; margin: 0 auto;
+}
+.profile-top { position: relative; overflow: hidden; }
+.profile-img { width: 100%; aspect-ratio: 16/7; object-fit: cover; object-position: top; }
+@media (max-width: 767px) { .profile-img { aspect-ratio: 4/3; } }
+.profile-body { padding: 36px 32px; }
+.profile-role { font-size: 10px; letter-spacing: .25em; color: var(--blue); font-weight: 700; margin-bottom: 8px; display: block; text-transform: uppercase; }
+.profile-name {
+  font-family: 'Noto Serif JP', serif; font-size: 26px;
+  color: var(--navy); font-weight: 900; margin-bottom: 20px;
+}
+.profile-text { font-size: 14px; line-height: 2; color: var(--text-m); }
+.profile-text + .profile-text { margin-top: 14px; }
+.profile-text strong { color: var(--navy); font-weight: 700; }
+@media (max-width:767px) { .profile-body { padding: 24px 20px; } }
+
+/* ===== FAQ ===== */
+.faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.faq-item { border: 1px solid var(--border); border-radius: var(--rad); overflow: hidden; background: rgba(255,255,255,0.9); }
+.faq-btn {
+  width: 100%; text-align: left; background: transparent; border: none; cursor: pointer;
+  padding: 22px 24px; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;
+  transition: background .15s; -webkit-tap-highlight-color: transparent;
+}
+.faq-btn:hover { background: var(--blue-l); }
+.faq-q { font-size: 14px; font-weight: 700; color: var(--navy); line-height: 1.6; flex: 1; text-align: left; }
+@media (min-width: 768px) { .faq-q { font-size: 15px; } }
+.faq-icon {
+  width: 26px; height: 26px; flex-shrink: 0;
+  background: var(--blue-l); border-radius: 50%; color: var(--blue);
+  font-size: 18px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  transition: transform .3s, background .2s; margin-top: 2px;
+  border: 1px solid var(--border);
+}
+.faq-item.open .faq-icon { transform: rotate(45deg); background: var(--blue); color: #fff; border-color: var(--blue); }
+.faq-ans {
+  max-height: 0; overflow: hidden;
+  transition: max-height .35s ease, padding .35s ease;
+  padding: 0 24px; font-size: 14px; line-height: 1.9; color: var(--text-m);
+  background: var(--blue-l);
+}
+.faq-item.open .faq-ans { max-height: 600px; padding: 18px 24px 28px; }
+
+/* ===== FORM ===== */
+.form-card {
+  background: rgba(255,255,255,0.97); border: 1px solid var(--border);
+  border-radius: var(--rad); padding: 40px 36px; margin-top: 24px;
+  box-shadow: 0 16px 60px rgba(0,100,140,0.1);
+  max-width: 800px; margin-left: auto; margin-right: auto;
+}
+@media (max-width:767px) { .form-card { padding: 24px 14px; border-radius: var(--rad-sm); } }
+
+.form-section-title {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 18px; font-weight: 900; color: var(--navy);
+  margin-bottom: 24px; padding-bottom: 16px;
+  border-bottom: 2px solid var(--blue-m);
+  display: flex; align-items: center; gap: 10px;
+}
+.form-section-num {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--blue); color: #fff;
+  font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 16px; font-weight: 600;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+
+.date-row { display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 32px; }
+@media (min-width:520px) { .date-row { grid-template-columns: 1fr 1fr; } }
+
+.field { margin-bottom: 28px; }
+.field-label { display: block; font-size: 13px; letter-spacing: .1em; color: var(--navy); font-weight: 700; margin-bottom: 10px; }
+.req {
+  display: inline-block; background: var(--amber); color: #fff;
+  font-size: 10px; padding: 3px 8px; border-radius: 4px; margin-left: 10px;
+  vertical-align: middle; letter-spacing: .04em;
+}
+.fi, .fs, .ft {
+  width: 100%; padding: 14px 16px; border: 1.5px solid var(--border);
+  background: #fff; font-size: 16px; font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400; color: var(--text); outline: none; border-radius: 10px;
+  transition: all .25s; -webkit-appearance: none;
+  /* iOS zoom防止: font-sizeは16px以上必須 */
+}
+.fi:focus, .fs:focus, .ft:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 4px rgba(0,153,187,0.1);
+}
+.fi::placeholder, .ft::placeholder { color: #bbc; }
+.fs {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%230099bb' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 18px center;
+  padding-right: 44px;
+}
+.ft { height: 140px; resize: vertical; }
+.fhint { font-size: 12px; color: var(--text-l); margin-top: 7px; }
+
+.zip-row { display: flex; gap: 12px; align-items: flex-start; }
+.zip-btn {
+  flex-shrink: 0; padding: 16px 18px; background: var(--blue); color: #fff;
+  border: none; border-radius: 10px; font-size: 13px; font-weight: 700;
+  cursor: pointer; white-space: nowrap; transition: background .2s;
+  touch-action: manipulation;
+}
+.zip-btn:hover { background: var(--blue-d); }
+
+.pay-box {
+  background: var(--blue-l); border: 1.5px solid var(--border);
+  border-radius: 14px; padding: 28px 24px; margin-bottom: 28px;
+}
+.pay-title { font-size: 14px; font-weight: 900; color: var(--navy); margin-bottom: 14px; }
+.pay-cards { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+.pay-card {
+  border: 1px solid #ddd; border-radius: 5px;
+  padding: 5px 12px; font-size: 12px; font-weight: 900; background: #fff;
+}
+.pay-info { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; line-height: 1.7; color: var(--text-m); }
+
+.check-row { display: flex; gap: 14px; align-items: flex-start; padding: 22px 0; border-top: 1px solid var(--border); margin-top: 8px; }
+.check-row input[type=checkbox] { flex-shrink: 0; width: 22px; height: 22px; accent-color: var(--blue); margin-top: 2px; }
+.check-text { font-size: 13px; line-height: 1.7; color: var(--text-m); }
+.check-text a { color: var(--blue); text-decoration: underline; font-weight: 600; }
+
+.sbtn {
+  width: 100%; max-width: 600px; display: flex; align-items: center; justify-content: center; gap: 10px;
+  margin: 0 auto 14px;
+  padding: 20px 16px; background: linear-gradient(135deg, var(--amber), var(--coral));
+  border: none; border-radius: 14px; color: #fff;
+  font-size: 18px; font-family: 'Noto Sans JP', sans-serif; font-weight: 900;
+  letter-spacing: .06em; cursor: pointer;
+  box-shadow: 0 10px 32px rgba(240,160,48,0.3);
+  border-bottom: 4px solid rgba(0,0,0,0.12);
+  touch-action: manipulation; transition: all .2s;
+}
+.sbtn:active { transform: translateY(3px); border-bottom-width: 1px; }
+.sbtn:disabled { background: #ccc; box-shadow: none; cursor: not-allowed; transform: none; border-bottom-width: 4px; }
+
+.form-alt { text-align: center; margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--border); }
+.form-alt p { font-size: 13px; color: var(--text-m); margin-bottom: 10px; line-height: 1.8; }
+.form-alt-num { font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 34px; color: var(--navy); text-decoration: none; display: block; letter-spacing: .04em; font-weight: 600; }
+
+/* ===== SUCCESS ===== */
+#form-success-msg {
+  display: none; text-align: center; padding: 48px 20px;
+  background: rgba(255,255,255,0.95); border: 2px solid #4caf82;
+  border-radius: var(--rad); margin-bottom: 32px;
+  max-width: 800px; margin-left: auto; margin-right: auto;
+}
+#form-success-msg h3 { font-size: 22px; color: #2e7d52; font-weight: 900; margin-bottom: 14px; }
+#form-success-msg p { font-size: 14px; color: var(--text); line-height: 1.9; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--navy); color: rgba(255,255,255,.65);
+  text-align: center; padding: 60px 20px;
+  position: relative; z-index: 2;
+}
+.ft-logo { font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 30px; color: #fff; margin-bottom: 6px; letter-spacing: .08em; font-weight: 400; }
+.ft-tag { font-size: 10px; letter-spacing: .28em; color: rgba(255,255,255,.35); margin-bottom: 28px; text-transform: uppercase; }
+.ft-divider { width: 40px; height: 1px; background: rgba(255,255,255,.2); margin: 0 auto 28px; }
+.ft-info { font-size: 14px; line-height: 2.2; }
+.ft-num { font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 30px; color: #fff; text-decoration: none; letter-spacing: .04em; font-weight: 600; }
+.ft-copy { font-size: 11px; color: rgba(255,255,255,.25); margin-top: 36px; letter-spacing: .08em; }
+.ft-copy a { color: rgba(255,255,255,.4); text-decoration: underline; margin: 0 8px; }
+
+/* ===== ANIMATIONS ===== */
+.rv { opacity: 0; transform: translateY(28px); transition: opacity .75s ease, transform .75s ease; }
+.rv.on { opacity: 1; transform: translateY(0); }
+.d1 { transition-delay: .12s; }
+.d2 { transition-delay: .24s; }
+.d3 { transition-delay: .36s; }
+.d4 { transition-delay: .48s; }
+
+/* ===== INLINE CTA ===== */
+.inline-cta {
+  display: block; background: linear-gradient(135deg, var(--amber), var(--coral));
+  color: #fff; text-align: center; padding: 20px 16px; border-radius: 14px;
+  text-decoration: none; margin: 0 auto 14px; max-width: 600px;
+  transition: opacity .2s;
+  box-shadow: 0 10px 30px rgba(240,160,48,0.28);
+  border-bottom: 4px solid rgba(0,0,0,0.1);
+}
+.inline-cta:active { opacity: 0.85; border-bottom-width: 1px; transform: translateY(3px); }
+.inline-cta-hint { font-size: 13px; letter-spacing: .08em; color: rgba(255,255,255,.9); margin-bottom: 4px; font-weight: 600; }
+.inline-cta-num { font-family: 'DM Sans', 'Noto Sans JP', sans-serif; font-size: 28px; letter-spacing: .04em; display: block; font-weight: 600; }
+.inline-cta-sub { font-size: 11px; color: rgba(255,255,255,.8); margin-top: 4px; }
+
+/* ===== DIVIDER IMAGE ===== */
+.full-img { width: 100%; aspect-ratio: 21/9; object-fit: cover; display: block; }
+</style>
+</head>
+<body>
+
+<div class="bg-base"></div>
+
+<div class="bubbles-container">
+  <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+  <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+  <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+  <div class="bubble"></div>
+</div>
+
+<div id="wrapper">
+
+  <!-- RIBBON -->
+  <div id="ribbon">
+    <div class="ribbon-scroll">
+      <span>嘔吐・おしっこ汚れも <strong>追加料金ゼロ</strong> で完全除菌・復元</span>
+      <span class="dot">●</span>
+      <span>Google <strong>★ 4.8</strong> 高評価で安心</span>
+      <span class="dot">●</span>
+      <span><strong>24時間</strong> WEB 予約受付中</span>
+      <span class="dot">●</span>
+      <span>嘔吐・おしっこ汚れも <strong>追加料金ゼロ</strong> で完全除菌・復元</span>
+      <span class="dot">●</span>
+      <span>Google <strong>★ 4.8</strong> 高評価で安心</span>
+      <span class="dot">●</span>
+      <span><strong>24時間</strong> WEB 予約受付中</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo-wrap">
+      <div class="nav-logo">Honey Dry Cleaning</div>
+      <div class="nav-logo-sub">宅配布団クリーニング専門店</div>
+    </div>
+    <div class="nav-review">
+      <span class="nav-review-stars">★★★★★</span>
+      <span>Google 4.8</span>
+    </div>
+    <a href="tel:046-290-0018" class="nav-tel">
+      <strong>046-290-0018</strong>
+      <span>月〜土 9:00–17:00</span>
+    </a>
+  </nav>
+
+  <!-- TOP MENU -->
+  <div class="top-menu">
+    <a href="#pricing" class="tm-item">
+      <svg class="tm-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="9"/><path d="M12 7v1m0 8v1M9.5 9.5a2.5 2.5 0 015 0c0 1.5-1 2-2.5 3"/>
+      </svg>
+      <span class="tm-text">料金の<br>ご案内</span>
+    </a>
+    <a href="#reviews" class="tm-item">
+      <svg class="tm-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+      </svg>
+      <span class="tm-text">お客様の<br>声</span>
+    </a>
+    <a href="#features" class="tm-item">
+      <svg class="tm-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2L3 11h5v11h8V11h5L12 2z"/>
+      </svg>
+      <span class="tm-text">選ばれる<br>理由</span>
+    </a>
+    <a href="#flow" class="tm-item">
+      <svg class="tm-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="18" height="4" rx="1"/>
+      </svg>
+      <span class="tm-text">ご利用の<br>流れ</span>
+    </a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-in">
+      <div class="hero-urgency">【毎月先着 50 名様限定】丁寧な手洗いのため受付数に限りがあります</div>
+      <div class="hero-eyebrow">Professional Futon Cleaning</div>
+      <h1 class="hero-h1">他店で断られた汚れも、<br><em>自社工場の本気の手洗いで</em><br>完全復元。</h1>
+      <p class="hero-desc">洗えない厚手のお布団、処分に困る古いお布団。<br>回収・洗浄・保管のすべてをスマートフォンひとつで。</p>
+      <div class="hero-trust">
+        <div class="hero-trust-item"><span>★</span> Google 4.8 高評価</div>
+        <div class="hero-trust-item"><span>¥0</span> 追加料金ゼロ</div>
+        <div class="hero-trust-item"><span>→</span> 往復送料込み</div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#form-section" class="hero-btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 9h20"/></svg>
+          WEB で予約する
+        </a>
+        <a href="tel:046-290-0018" class="hero-btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 13.88 19.79 19.79 0 01.02 5.22 2 2 0 012 3.04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 10.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          電話で相談
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-item">
+      <div class="trust-fig">★4.8</div>
+      <div class="trust-label">Google 評価</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-fig">500+</div>
+      <div class="trust-label">累計依頼枚数</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-fig">¥0</div>
+      <div class="trust-label">特殊汚れ追加料金</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-fig">9ヶ月</div>
+      <div class="trust-label">最長保管期間</div>
+    </div>
+  </div>
+
+  <!-- PROBLEM INTRO -->
+  <section class="sec">
+    <span class="sec-eyebrow rv">こんなお悩みありませんか？</span>
+    <div class="prob-inner rv">
+      <img src="image/7674_color.png" alt="悩む女性" class="prob-img">
+      <div class="prob-bubbles">
+        <div class="prob-bubble pb-blue">布団を<br>ランドリーに<br>運ぶのが<br>大変...</div>
+        <div class="prob-bubble pb-light">服が多すぎて<br>クローゼットが<br>パンパン...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM DETAIL -->
+  <section class="sec-alt" style="padding-top:0;">
+    <h2 class="sec-h2 rv">布団の「中身」は、<br><em>思っている以上に汚れています。</em></h2>
+
+    <div class="prob-alert rv">
+      実は、布団の重量の数％は「ダニの死骸やフン、古い角質」だと言われています。天日干しで湿気は飛ばせても、繊維の奥にこびりついた皮脂・塩分・アレルゲンを死滅・除去することはできません。
+    </div>
+
+    <p class="sec-lead rv">天日干しでは解決できない蓄積汚れ。家族の健康を守るために、今すぐ確認してください。</p>
+
+    <div class="worry-grid">
+      <div class="worry-card rv">
+        <div class="worry-card-head"><span class="worry-num">1</span>蓄積汚れの恐怖</div>
+        <div class="worry-body">一晩でコップ一杯の汗。それが蓄積し、カビやダニの温床に。天日干しでは解決できません。</div>
+      </div>
+      <div class="worry-card rv d1">
+        <div class="worry-card-head"><span class="worry-num">2</span>アレルギーのリスク</div>
+        <div class="worry-body">目に見えないダニの死骸やフン。それがアレルギーを引き起こす原因になっているかもしれません。</div>
+      </div>
+      <div class="worry-card rv d2">
+        <div class="worry-card-head"><span class="worry-num">3</span>「中身」の不安</div>
+        <div class="worry-body">表面は綺麗に見えても、中身は数年分の蓄積。家族の寝室を「本当の清潔」に戻しましょう。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="sec" id="features">
+    <span class="sec-eyebrow rv">サービスの特徴</span>
+    <div class="solution-lead rv">そんなお悩みを<em>解決します！</em></div>
+    <h2 class="sec-h2 rv" style="margin-bottom:40px;">水洗いで、<br>「<em>中身</em>」から新品へ。</h2>
+
+    <div class="feat-intro rv">
+      <div class="feat-intro-title">外側を干すだけでは、中わたの汚れは落ちません。</div>
+      <p class="feat-intro-body">中わたに染み込んだ数年分の汗や皮脂、ダニの死骸までは天日干しでは落としきれません。私たちのクリーニングは、布団を<strong>「丸ごと水洗い」</strong>することにこだわりました。</p>
+      <p class="feat-intro-body">繊維の奥深くに潜むアレルゲンを根こそぎ洗い流すことで、失われていた弾力が蘇り、まるで新品のような軽さと清潔さが戻ります。表面的な綺麗さではなく、芯からの<strong>「本当の清潔」</strong>をお届けします。</p>
+    </div>
+
+    <div class="feat-grid">
+      <div class="feat-card rv">
+        <div class="feat-icon-col">
+          <svg class="feat-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zM2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/>
+          </svg>
+          <div class="feat-icon-label">完全個別<br>洗浄</div>
+        </div>
+        <div class="feat-body">
+          <div class="feat-title">完全個別洗浄</div>
+          <p class="feat-text">他人の布団と混ぜることはありません。一台をあなた専用に貸し切り、最適な温度で丁寧に洗浄します。</p>
+        </div>
+      </div>
+      <div class="feat-card rv d1">
+        <div class="feat-icon-col">
+          <svg class="feat-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          <div class="feat-icon-label">羽毛<br>復元乾燥</div>
+        </div>
+        <div class="feat-body">
+          <div class="feat-title">羽毛の弾力を復元</div>
+          <p class="feat-text">巨大なタンブラーで空気をたっぷり送り込み、へたった羽毛の弾力を劇的に回復させます。</p>
+        </div>
+      </div>
+      <div class="feat-card rv d2">
+        <div class="feat-icon-col">
+          <svg class="feat-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <div class="feat-icon-label">特殊汚れ<br>¥0対応</div>
+        </div>
+        <div class="feat-body">
+          <div class="feat-title">特殊汚れも追加料金ゼロ</div>
+          <p class="feat-text">嘔吐・尿・ペットの粗相など、他店が断る汚れも専用プロセスで根本から除菌・消臭します。</p>
+        </div>
+      </div>
+      <div class="feat-card rv d3">
+        <div class="feat-icon-col">
+          <svg class="feat-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+          </svg>
+          <div class="feat-icon-label">ダニ<br>徹底除去</div>
+        </div>
+        <div class="feat-body">
+          <div class="feat-title">ダニを徹底除去</div>
+          <p class="feat-text">高温乾燥で布団内部のダニを徹底的に除去。アレルギー体質のお子様にも安心です。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-block rv" style="margin-top:52px;">
+      <div class="cta-label">＼ まずはお気軽にご相談ください ／</div>
+      <a href="tel:046-290-0018" class="inline-cta">
+        <div class="inline-cta-hint">お電話でのご予約・ご相談</div>
+        <span class="inline-cta-num">046-290-0018</span>
+        <div class="inline-cta-sub">月〜土 9:00〜17:00（日曜定休）</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="sec-alt" id="pricing">
+    <span class="sec-eyebrow rv">プラン選択</span>
+    <h2 class="sec-h2 rv">料金のご案内</h2>
+
+    <p class="pricing-zero rv">
+      特殊な汚れ（嘔吐・尿・ペットの粗相など）による<strong>追加料金は一切いただきません。</strong>表示価格がそのままご請求金額となります。
+    </p>
+
+    <div class="plan-wrap rv">
+      <div class="plan-featured" id="pc-multi">
+        <span class="plan-badge">【おすすめ】複数点パック — 1 枚あたりの単価がお得に</span>
+        <div class="plan-body">
+          <div class="plan-title">ご家族分や、掛け・敷きセットに最適です。</div>
+          <div class="plan-desc">点数を選ぶと料金が変わります。3 点以上でさらにお得！</div>
+          <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:8px;">
+            <div class="stepper-row">
+              <button type="button" class="sp-btn" onclick="chCnt(-1)">−</button>
+              <span class="sp-val" id="cnt-disp">2</span>
+              <button type="button" class="sp-btn" onclick="chCnt(1)">＋</button>
+            </div>
+            <div class="plan-cnt-label" id="cnt-label">2 点パック</div>
+          </div>
+          <div class="plan-price-row">
+            <span class="plan-yen">¥</span>
+            <span class="plan-fig" id="pack-fig">13,640</span>
+            <span class="plan-tax">〜（税込）</span>
+          </div>
+          <div class="plan-note" id="pack-note">羽毛布団 2 枚 · 往復送料込み</div>
+          <span class="plan-tag" id="pack-tag">人気 No.1 パック</span>
+        </div>
+      </div>
+
+      <div style="text-align:center;">
+        <button type="button" class="plan-single-link" onclick="chCnt(1-futonCnt)">
+          ※1 点のみをご希望の方はこちら（¥9,900 税込）
+        </button>
+      </div>
+
+      <div class="plan-single" id="pc-single" style="display:none;">
+        <div>
+          <div class="plan-single-label">1 点のみ</div>
+          <div class="plan-single-price">¥9,900</div>
+          <div class="plan-single-note">羽毛布団 1 枚 · 往復送料込み</div>
+        </div>
+        <button type="button" onclick="chCnt(1)" style="padding:10px 18px;background:var(--blue);border:none;border-radius:8px;color:#fff;font-size:13px;font-weight:700;cursor:pointer;">複数点に変更 →</button>
+      </div>
+    </div>
+
+    <!-- Options -->
+    <div style="margin-top:32px;" class="rv">
+      <div class="opt-table">
+        <div class="opt-section-title">オプション（点数指定）</div>
+        <div class="opt-row">
+          <div class="opt-info"><span class="opt-name">敷布団</span><span class="opt-unit">1 枚 +3,300 円</span></div>
+          <div class="opt-stepper">
+            <button type="button" class="opt-sp-btn" onclick="chOpt('shiki',-1)">−</button>
+            <span class="opt-sp-val" id="o-shiki">0</span>
+            <button type="button" class="opt-sp-btn" onclick="chOpt('shiki',1)">＋</button>
+          </div>
+          <div class="opt-subtotal" id="ot-shiki">+0 円</div>
+        </div>
+        <div class="opt-row">
+          <div class="opt-info"><span class="opt-name">防ダニ加工</span><span class="opt-unit">1 点 +1,155 円</span></div>
+          <div class="opt-stepper">
+            <button type="button" class="opt-sp-btn" onclick="chOpt('dani',-1)">−</button>
+            <span class="opt-sp-val" id="o-dani">0</span>
+            <button type="button" class="opt-sp-btn" onclick="chOpt('dani',1)">＋</button>
+          </div>
+          <div class="opt-subtotal" id="ot-dani">+0 円</div>
+        </div>
+        <div class="opt-row">
+          <div class="opt-info"><span class="opt-name">毛布のついで洗い</span><span class="opt-unit">1 枚 +2,000 円</span></div>
+          <div class="opt-stepper">
+            <button type="button" class="opt-sp-btn" onclick="chOpt('mofu',-1)">−</button>
+            <span class="opt-sp-val" id="o-mofu">0</span>
+            <button type="button" class="opt-sp-btn" onclick="chOpt('mofu',1)">＋</button>
+          </div>
+          <div class="opt-subtotal" id="ot-mofu">+0 円</div>
+        </div>
+        <div class="opt-row">
+          <div class="opt-info"><span class="opt-name">保管サービス</span><span class="opt-unit">1 点 +1,100 円 / 最長 9 ヶ月</span></div>
+          <div class="opt-stepper">
+            <button type="button" class="opt-sp-btn" onclick="chOpt('hokan',-1)">−</button>
+            <span class="opt-sp-val" id="o-hokan">0</span>
+            <button type="button" class="opt-sp-btn" onclick="chOpt('hokan',1)">＋</button>
+          </div>
+          <div class="opt-subtotal" id="ot-hokan">+0 円</div>
+        </div>
+        <div class="total-bar">
+          <div>
+            <div class="total-label">お見積り合計（目安）</div>
+            <div class="total-breakdown" id="total-bd">2 点パックのみ</div>
+          </div>
+          <div style="text-align:right;">
+            <span class="total-fig" id="grand-fig">13,640</span>
+            <span class="total-unit"> 円（税込）</span>
+          </div>
+        </div>
+      </div>
+      <p class="price-disclaimer">※ 点数またはオプション選択時に自動計算されます。確定金額はご注文後にご案内いたします。</p>
+    </div>
+
+    <div class="cta-block rv" style="margin-top:52px;">
+      <div class="cta-label">＼ スマホで簡単 3 分！お見積りだけでも OK ／</div>
+      <a href="#form-section" class="cta-btn-primary">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 9h20"/></svg>
+        予約フォームへ進む
+      </a>
+      <div class="cta-hint">24 時間 365 日受付中</div>
+    </div>
+  </section>
+
+  <!-- FLOW -->
+  <section class="sec" id="flow">
+    <span class="sec-eyebrow rv">ご利用の流れ</span>
+    <h2 class="sec-h2 rv">4 ステップで<br><em>完結します。</em></h2>
+    <div class="flow-grid">
+      <div class="flow-card rv">
+        <div class="flow-num">1</div>
+        <div class="flow-body">
+          <div class="flow-title">スマホまたは電話で予約</div>
+          <p class="flow-text">WEB フォームまたはお電話にてご予約。汚れの状況をお伝えください。専門スタッフが丁寧にご案内します。</p>
+        </div>
+      </div>
+      <div class="flow-card rv d1">
+        <div class="flow-num">2</div>
+        <div class="flow-body">
+          <div class="flow-title">専用キットに詰める</div>
+          <p class="flow-text">ご自宅に集荷キットをお届けします。梱包方法はスタッフが丁寧にご案内するので、初めての方も安心です。</p>
+        </div>
+      </div>
+      <div class="flow-card rv d2">
+        <div class="flow-num">3</div>
+        <div class="flow-body">
+          <div class="flow-title">玄関で渡す</div>
+          <p class="flow-text">宅配業者がご自宅まで集荷に伺います。重くて大きな布団もお任せください。</p>
+        </div>
+      </div>
+      <div class="flow-card rv d3">
+        <div class="flow-num">4</div>
+        <div class="flow-body">
+          <div class="flow-title">洗いたてが届く</div>
+          <p class="flow-text">ふかふかに復元された布団が、清潔に梱包されてご自宅に届きます。通常 10〜14 日程度。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORAGE -->
+  <section class="sec-soft">
+    <span class="sec-eyebrow rv">保管サービス（オプション）</span>
+    <h2 class="sec-h2 rv">最長 9 ヶ月。<br>オフシーズンの<em>クローゼットがスッキリ。</em></h2>
+    <div class="storage-card rv">
+      <div class="storage-head">
+        <div class="storage-head-title">空調管理された専用ルームで安心保管</div>
+        <div class="storage-head-price">1 点 +1,100 円（税込）/ 最長 9 ヶ月</div>
+      </div>
+      <div class="storage-body">
+        <ul class="storage-list">
+          <li class="storage-item"><span class="storage-dot"></span>ダニを徹底除去した徹底管理の専用保管ルーム</li>
+          <li class="storage-item"><span class="storage-dot"></span>温度・湿度を一定に保ったクリーンな環境で管理</li>
+          <li class="storage-item"><span class="storage-dot"></span>オフシーズン中のクローゼットのスペースを有効活用</li>
+          <li class="storage-item"><span class="storage-dot"></span>次のシーズンが来たらご自宅にお届け</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER IMAGE -->
+  <img src="https://images.unsplash.com/photo-1582582621959-48d27397dc69?auto=format&fit=crop&w=1200&q=80" class="full-img" alt="清潔な布団" loading="lazy">
+
+  <!-- REVIEWS -->
+  <section class="sec-alt" id="reviews">
+    <span class="sec-eyebrow rv">お客様の声</span>
+    <h2 class="sec-h2 rv">ご利用いただいた<br>お客様より</h2>
+
+    <div class="review-trust-badge rv">
+      <div class="rtb-item">
+        <span class="rtb-stars">★★★★★</span>
+        <span>Google 評価 4.8</span>
+        <span class="rtb-count">（実際の口コミより）</span>
+      </div>
+    </div>
+
+    <div class="review-grid">
+      <div class="review-card rv">
+        <div class="review-body">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">「新品のようなふっくら感が戻りました。まるで買ったばかりのようです。」</p>
+          <div class="review-author">40 代主婦 · 神奈川県</div>
+          <div class="review-reply">
+            <span class="reply-name">工場長 池田より</span>
+            <p class="reply-text">羽毛の奥まで空気を含ませる専用乾燥で、本来の軽さを引き出しております。喜んでいただけて何よりです！</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card rv d1">
+        <div class="review-body">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">「アレルギー持ちの子供も安心して眠れています。鼻水が減った気がします。」</p>
+          <div class="review-author">30 代主婦 · 東京都</div>
+          <div class="review-reply">
+            <span class="reply-name">工場長 池田より</span>
+            <p class="reply-text">高温乾燥でダニを徹底的に死滅・除去しますので、ご家族の健康維持にお役立ていただけて嬉しいです。</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card rv d2">
+        <div class="review-body">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">「絶望的だったおねしょの臭いが完全に消えていました。電話対応も親身で本当に救われました。」</p>
+          <div class="review-author">30 代主婦 · 神奈川県</div>
+          <div class="review-reply">
+            <span class="reply-name">受付担当より</span>
+            <p class="reply-text">追加料金なしで完全消臭できて良かったです！またいつでもご相談ください。</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-card rv d3">
+        <div class="review-body">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">「長年使っていた羽毛布団が、見違えるように軽くなりました。またお願いします。」</p>
+          <div class="review-author">50 代男性 · 埼玉県</div>
+          <div class="review-reply">
+            <span class="reply-name">工場長 池田より</span>
+            <p class="reply-text">長年の皮脂汚れをしっかり洗い流したことで、本来の羽毛のフワフワ感が蘇りましたね。来シーズンもお待ちしております！</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="sec">
+    <span class="sec-eyebrow rv">サービス比較</span>
+    <h2 class="sec-h2 rv">他サービスとの<br>比較をまとめました。</h2>
+    <div class="comp-wrap rv">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th style="background:#3a4a55;min-width:80px;"></th>
+            <th class="us" style="min-width:100px;">Honey Dry<br>ハニードライ</th>
+            <th style="min-width:90px;">近所の<br>クリーニング店</th>
+            <th style="min-width:90px;">一般宅配<br>クリーニング</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>特殊汚れ対応</th><td class="g hl">◎<br><span class="cbadge">追加料金ゼロ</span></td><td class="r">×<br><span style="font-size:11px;">断られる事多数</span></td><td class="y">△<br><span style="font-size:11px;">追加料金が発生</span></td></tr>
+          <tr><th>電話対応</th><td class="g hl">◎<br><span class="cbadge">即集荷手配</span></td><td class="y">○</td><td class="r">×<br><span style="font-size:11px;">WEB のみ</span></td></tr>
+          <tr><th>往復送料</th><td class="g hl">◎<br><span class="cbadge">完全込み</span></td><td class="r">×<br><span style="font-size:11px;">持ち込み必要</span></td><td class="y">△<br><span style="font-size:11px;">条件付きが多い</span></td></tr>
+          <tr><th>長期保管</th><td class="g hl">◎<br><span class="cbadge">最長 9 ヶ月</span></td><td class="r">×</td><td class="y">△<br><span style="font-size:11px;">オプション</span></td></tr>
+          <tr><th>ダニ除菌</th><td class="g hl">◎<br><span class="cbadge">徹底除去</span></td><td class="y">△</td><td class="y">○</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- PROFILE -->
+  <section class="sec-soft">
+    <span class="sec-eyebrow rv">スタッフより</span>
+    <h2 class="sec-h2 rv">一枚一枚に魂を込めて、<br><em>全力で洗い上げます。</em></h2>
+    <div class="profile-card rv">
+      <div class="profile-top">
+        <img class="profile-img" src="image/koujohcho.png" alt="工場長" loading="lazy">
+      </div>
+      <div class="profile-body">
+        <span class="profile-role">Honey Dry Cleaning — 工場 若手リーダー</span>
+        <div class="profile-name">池田　智哉</div>
+        <p class="profile-text">私たちは、決して全国展開しているような大きなお店ではありません。だからこそ、大手のような「機械的な大量生産」ではなく、お客様の大切なお布団<strong>「一枚一枚」に徹底的に向き合うこと</strong>ができます。</p>
+        <p class="profile-text" style="margin-top:14px;">他店で「洗えません」「別料金です」と断られたひどい汚れでも、決して諦めません。自分の家族が寝る布団と同じように、一切の妥協を許さず、手洗いと専門技術で新品のようなふかふかに復元させていただきます。まずはお気軽にご相談ください！</p>
+      </div>
+    </div>
+
+    <div class="cta-block rv" style="margin-top:40px;">
+      <div class="cta-label">＼ どんな汚れでもお任せください ／</div>
+      <a href="tel:046-290-0018" class="inline-cta">
+        <div class="inline-cta-hint">お急ぎの方はお電話がスムーズです</div>
+        <span class="inline-cta-num">046-290-0018</span>
+        <div class="inline-cta-sub">月〜土 9:00〜17:00（日曜定休）</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec-alt">
+    <span class="sec-eyebrow rv">よくあるご質問</span>
+    <h2 class="sec-h2 rv">FAQ</h2>
+    <div class="faq-list rv">
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">どんな布団でも洗えますか？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">羽毛、羊毛、綿など幅広く対応しております。ただし一部洗えない素材もございます。まずはお電話（<a href="tel:046-290-0018" style="color:var(--blue);font-weight:700;">046-290-0018</a>）または WEB フォームにてご状況をお聞かせください。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">汚物が付いたまま送ってもいいですか？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">はい、お送りいただけます。ただし宅配便でお送りいただくため、完全に乾燥させるか、臭いや水分が漏れないよう密閉袋に入れて箱にお詰めください。梱包方法はお電話でも丁寧にご案内いたします。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">仕上がりまでどのくらいかかりますか？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">通常、集荷から 10〜14 日程度でご返送いたします。繁忙期は多少お時間をいただく場合がございます。お急ぎの場合はお電話にてご相談ください。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">追加料金はかかりますか？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">嘔吐・尿・ペットの粗相など、特殊汚れによる追加料金は一切いただきません。オプション（保管・防ダニ加工など）をご選択された場合のみ、別途費用が発生いたします。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">保管サービスはいつでも取り出せますか？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">最長 9 ヶ月の保管期間中、ご希望のタイミングでお届けが可能です。お届け日はお電話または WEB フォームにてご連絡ください。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span class="faq-q">集荷エリアはどこですか？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-ans">神奈川県・東京都・千葉県・埼玉県を中心に対応しております。その他エリアについてはお電話（<a href="tel:046-290-0018" style="color:var(--blue);font-weight:700;">046-290-0018</a>）にてお問い合わせください。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section id="form-section" class="sec">
+    <span class="sec-eyebrow rv">WEB 予約</span>
+    <h2 class="sec-h2 rv">集荷日・受取日の<br><em>ご予約</em></h2>
+    <p class="sec-lead rv">集荷は<strong style="color:var(--navy);">2 日後以降</strong>のご対応となります。</p>
+    <p style="font-size:13px;color:var(--coral);margin-bottom:32px;text-align:center;font-weight:700;" class="rv">
+      お急ぎの場合は <a href="tel:046-290-0018" style="color:var(--coral);font-weight:900;text-decoration:underline;">046-290-0018</a> へお電話ください。
+    </p>
+
+    <div id="form-success-msg">
+      <h3>ご予約の送信が完了しました！</h3>
+      <p>この度は Honey Dry Cleaning をご利用いただき誠にありがとうございます。<br>ご入力いただいたメールアドレス宛に、決済用のリンク（ご請求書）をお送りいたします。<br>メールが届きましたら、内容をご確認の上お支払いをお願いいたします。</p>
+    </div>
+
+    <div class="form-card rv" id="reservation-form-card">
+      <form action="https://formspree.io/f/xojnbqqg" method="POST" id="main-form">
+        <input type="hidden" name="_subject" value="【Honey Dry Cleaning】新規ご予約">
+
+        <!-- STEP 1: DATES -->
+        <div class="form-section-title">
+          <span class="form-section-num">1</span>
+          集荷日・受取日のご指定
+        </div>
+        <div class="date-row" style="margin-bottom:32px;">
+          <div>
+            <label class="field-label">ご希望集荷日<span class="req">必須</span></label>
+            <input type="date" class="fi" id="pickup-date" name="ご希望集荷日" required onchange="updateDeliveryDate()">
+            <div class="fhint">※2 日後以降の日付をご指定ください。</div>
+          </div>
+          <div>
+            <label class="field-label">ご希望受取日<span class="req">必須</span></label>
+            <input type="date" class="fi" id="delivery-date" name="ご希望受取日" required disabled>
+            <div class="fhint">※集荷日の 8 日後以降をご指定ください。</div>
+          </div>
+        </div>
+
+        <!-- STEP 2: INFO -->
+        <div class="form-section-title">
+          <span class="form-section-num">2</span>
+          お客様情報
+        </div>
+        <div class="field">
+          <label class="field-label">お名前<span class="req">必須</span></label>
+          <input type="text" class="fi" name="お名前" placeholder="山田 花子" required>
+        </div>
+        <div class="field">
+          <label class="field-label">メールアドレス<span class="req">必須</span></label>
+          <input type="email" class="fi" name="email" placeholder="example@honey-dry.com" required>
+        </div>
+        <div class="field">
+          <label class="field-label">郵便番号<span class="req">必須</span></label>
+          <div class="zip-row">
+            <input type="text" class="fi" id="zipcode" name="郵便番号" placeholder="例：2430218" maxlength="8"
+              oninput="handleZipInput(this)" inputmode="numeric" required>
+            <button type="button" class="zip-btn" onclick="lookupZip()">住所を検索</button>
+          </div>
+          <div id="zip-status" style="font-size:12px;margin-top:7px;min-height:18px;color:var(--text-l);"></div>
+        </div>
+        <div class="field">
+          <label class="field-label">都道府県・市区町村<span class="req">必須</span></label>
+          <input type="text" class="fi" id="addr1" name="都道府県・市区町村" placeholder="郵便番号を入力すると自動入力されます。" required>
+        </div>
+        <div class="field">
+          <label class="field-label">番地・建物名<span class="req">必須</span></label>
+          <input type="text" class="fi" id="addr2" name="番地・建物名" placeholder="例：1-2-3 ○○マンション 101 号室" required>
+        </div>
+        <div class="field">
+          <label class="field-label">電話番号<span class="req">必須</span></label>
+          <input type="tel" class="fi" name="電話番号" placeholder="090-0000-0000" required>
+        </div>
+
+        <!-- STEP 3: ORDER -->
+        <div class="form-section-title" style="margin-top:32px;">
+          <span class="form-section-num">3</span>
+          ご注文内容
+        </div>
+        <div class="field">
+          <label class="field-label">布団の点数<span class="req">必須</span></label>
+          <div style="background:var(--blue-l);border:1.5px solid var(--border);border-radius:14px;padding:24px;">
+            <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:14px;">
+              <div class="stepper-row" style="margin-bottom:0;">
+                <button type="button" class="sp-btn" onclick="chCnt(-1)">−</button>
+                <span class="sp-val" id="f-cnt-disp">2</span>
+                <button type="button" class="sp-btn" onclick="chCnt(1)">＋</button>
+              </div>
+              <span style="font-size:15px;color:var(--navy);font-weight:700;" id="f-cnt-label">2 点パック</span>
+            </div>
+            <div style="font-size:14px;color:var(--navy);font-weight:600;">
+              布団料金：<span id="f-base-price" style="font-family:'DM Sans','Noto Sans JP',sans-serif;font-size:30px;color:var(--coral);font-weight:600;">13,640</span> 円（税込）
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field-label">オプション</label>
+          <div class="opt-table" style="border-radius:14px;">
+            <div class="opt-row">
+              <div class="opt-info"><span class="opt-name">敷布団</span><span class="opt-unit">1 枚 +3,300 円</span></div>
+              <div class="opt-stepper">
+                <button type="button" class="opt-sp-btn" onclick="chOpt('shiki',-1)">−</button>
+                <span class="opt-sp-val" id="f-o-shiki">0</span>
+                <button type="button" class="opt-sp-btn" onclick="chOpt('shiki',1)">＋</button>
+              </div>
+              <div class="opt-subtotal" id="f-ot-shiki">+0 円</div>
+            </div>
+            <div class="opt-row">
+              <div class="opt-info"><span class="opt-name">防ダニ加工</span><span class="opt-unit">1 点 +1,155 円</span></div>
+              <div class="opt-stepper">
+                <button type="button" class="opt-sp-btn" onclick="chOpt('dani',-1)">−</button>
+                <span class="opt-sp-val" id="f-o-dani">0</span>
+                <button type="button" class="opt-sp-btn" onclick="chOpt('dani',1)">＋</button>
+              </div>
+              <div class="opt-subtotal" id="f-ot-dani">+0 円</div>
+            </div>
+            <div class="opt-row">
+              <div class="opt-info"><span class="opt-name">毛布のついで洗い</span><span class="opt-unit">1 枚 +2,000 円</span></div>
+              <div class="opt-stepper">
+                <button type="button" class="opt-sp-btn" onclick="chOpt('mofu',-1)">−</button>
+                <span class="opt-sp-val" id="f-o-mofu">0</span>
+                <button type="button" class="opt-sp-btn" onclick="chOpt('mofu',1)">＋</button>
+              </div>
+              <div class="opt-subtotal" id="f-ot-mofu">+0 円</div>
+            </div>
+            <div class="opt-row">
+              <div class="opt-info"><span class="opt-name">保管サービス</span><span class="opt-unit">1 点 +1,100 円 / 最長 9 ヶ月</span></div>
+              <div class="opt-stepper">
+                <button type="button" class="opt-sp-btn" onclick="chOpt('hokan',-1)">−</button>
+                <span class="opt-sp-val" id="f-o-hokan">0</span>
+                <button type="button" class="opt-sp-btn" onclick="chOpt('hokan',1)">＋</button>
+              </div>
+              <div class="opt-subtotal" id="f-ot-hokan">+0 円</div>
+            </div>
+            <div class="total-bar" style="border-radius:0 0 14px 14px;">
+              <div>
+                <div class="total-label">ご注文合計（目安）</div>
+              </div>
+              <div style="text-align:right;">
+                <span class="total-fig" id="f-grand">13,640</span>
+                <span class="total-unit"> 円（税込）</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field-label">ご要望・汚れの状況など</label>
+          <textarea class="ft" name="備考・ご要望" placeholder="例：子供が嘔吐してしまいました。羽毛布団ダブルサイズです。"></textarea>
+        </div>
+
+        <input type="hidden" id="hidden-order-details" name="ご注文内容">
+        <input type="hidden" id="hidden-order-total" name="合計金額">
+
+        <!-- PAYMENT -->
+        <div class="pay-box">
+          <div class="pay-title">お支払い方法について</div>
+          <div class="pay-cards">
+            <span class="pay-card" style="color:#1a1a8e;">VISA</span>
+            <span class="pay-card" style="color:#eb001b;">Master</span>
+            <span class="pay-card" style="color:#2e77bc;">AMEX</span>
+            <span class="pay-card" style="color:#003087;">JCB</span>
+            <span class="pay-card" style="color:#E60012;">PayPay</span>
+          </div>
+          <div class="pay-info">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style="flex-shrink:0;margin-top:2px;"><rect x="3" y="6" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.5" stroke-opacity=".6"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.5" stroke-opacity=".6"/></svg>
+            <p>ご予約完了後、ご入力いただいたメールアドレス宛に決済用の請求書（お支払いリンク）をお送りいたします。各種クレジットカード、または PayPay にて安全にお支払いいただけます。</p>
+          </div>
+        </div>
+
+        <div class="check-row">
+          <input type="checkbox" id="agree" required>
+          <label class="check-text" for="agree">
+            <a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意のうえ、送信します。収集した情報はご予約対応のみに使用いたします。
+          </label>
+        </div>
+
+        <button type="submit" class="sbtn" id="checkout-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 9h20"/></svg>
+          予約を確定して送信する
+        </button>
+        <p style="text-align:center;font-size:12px;color:var(--text-l);margin-top:12px;">
+          ※送信後、ご登録のメールアドレスに決済用のリンクが届きます。
+        </p>
+
+        <div class="form-alt">
+          <p>お急ぎの場合は、フォームよりお電話でのご相談をお勧めいたします。</p>
+          <a href="tel:046-290-0018" class="form-alt-num">046-290-0018</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="ft-logo">Honey Dry Cleaning</div>
+    <div class="ft-tag">宅配布団クリーニング専門店</div>
+    <div class="ft-divider"></div>
+    <div class="ft-info">
+      〒243-0218 神奈川県厚木市飯山南 2-5-27<br>
+      <a href="tel:0462900018" class="ft-num">046-290-0018</a><br>
+      月〜土 9:00〜17:00（日曜定休）
+    </div>
+    <div class="ft-copy">
+      © 2024 Honey Dry Cleaning. All rights reserved.
+      <a href="privacy.html" target="_blank">プライバシーポリシー</a>
+      <a href="tokushoho.html" target="_blank">特定商取引法に基づく表記</a>
+    </div>
+  </footer>
+
+</div><!-- /wrapper -->
+
+<!-- STICKY BAR -->
+<div id="bar">
+  <a href="tel:046-290-0018" class="bar-call">
+    <span class="bar-call-lbl">お急ぎのご相談・集荷依頼</span>
+    <span class="bar-call-num">046-290-0018</span>
+  </a>
+  <a href="#form-section" class="bar-web">
+    WEB 予約
+    <span class="bar-web-sub">24 時間受付</span>
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "どんな布団でも洗えますか？",
+    "acceptedAnswer": { "@type": "Answer", "text": "羽毛、羊毛、綿など幅広く対応しております。" }
+  }, {
+    "@type": "Question",
+    "name": "追加料金はかかりますか？",
+    "acceptedAnswer": { "@type": "Answer", "text": "嘔吐・尿・ペットの粗相など、特殊汚れによる追加料金は一切いただきません。" }
+  }]
+}
+</script>
+
+<script>
+/* === ZIPCODE === */
+function handleZipInput(el){
+  let v=el.value.replace(/[^0-9]/g,'');
+  if(v.length>3) v=v.slice(0,3)+'-'+v.slice(3,7);
+  el.value=v;
+  if(v.replace('-','').length===7) lookupZip();
+}
+function lookupZip(){
+  const zipEl=document.getElementById('zipcode');
+  const statusEl=document.getElementById('zip-status');
+  const addr1El=document.getElementById('addr1');
+  if(!zipEl||!statusEl||!addr1El) return;
+  const zip=zipEl.value.replace(/[^0-9]/g,'');
+  if(zip.length!==7){
+    statusEl.style.color='var(--coral)';
+    statusEl.textContent='郵便番号は 7 桁で入力してください。';
+    return;
+  }
+  statusEl.style.color='var(--text-l)';
+  statusEl.textContent='検索中...';
+  const old=document.getElementById('zip-script');
+  if(old) old.remove();
+  window._zipCallback=function(data){
+    const s=document.getElementById('zip-status');
+    const a=document.getElementById('addr1');
+    if(data&&data.results&&data.results.length>0){
+      const r=data.results[0];
+      a.value=r.address1+r.address2+r.address3;
+      a.style.borderColor='var(--blue)';
+      s.style.color='var(--blue-d)';
+      s.textContent='✓ 住所を自動入力しました。';
+      const a2=document.getElementById('addr2');
+      if(a2) a2.focus();
+    } else {
+      s.style.color='var(--coral)';
+      s.textContent='該当する住所が見つかりませんでした。手動でご入力ください。';
+    }
+  };
+  const script=document.createElement('script');
+  script.id='zip-script';
+  script.src='https://zipcloud.ibsnet.co.jp/api/search?zipcode='+zip+'&callback=_zipCallback';
+  script.onerror=function(){
+    document.getElementById('zip-status').textContent='通信エラーです。手動でご入力ください。';
+  };
+  document.head.appendChild(script);
+}
+
+/* === PRICING STATE === */
+let futonCnt=2;
+const opts={shiki:0,dani:0,mofu:0,hokan:0};
+const optP={shiki:3300,dani:1155,mofu:2000,hokan:1100};
+const optNames={shiki:'敷布団',dani:'防ダニ加工',mofu:'毛布のついで洗い',hokan:'保管サービス'};
+function basePrice(n){
+  if(n===1) return 9900;
+  if(n===2) return 13640;
+  if(n===3) return 19250;
+  return 19250+(n-3)*5000;
+}
+function packLabel(n){
+  if(n===1) return '1 点のみ';
+  if(n===2) return '2 点パック';
+  if(n===3) return '3 点パック';
+  return n+'点パック';
+}
+function fmt(n){return n.toLocaleString('ja-JP');}
+function g(id){return document.getElementById(id);}
+function txt(id,v){const el=g(id);if(el)el.textContent=v;}
+
+function update(){
+  const bp=basePrice(futonCnt);
+  txt('cnt-disp',futonCnt); txt('cnt-label',packLabel(futonCnt));
+  txt('pack-fig',fmt(bp)); txt('pack-note','羽毛布団 '+futonCnt+' 枚 · 往復送料込み');
+  const tagEl=g('pack-tag');
+  if(tagEl){
+    if(futonCnt===1){tagEl.textContent='1 点のみ';tagEl.style.display='inline-block';}
+    else if(futonCnt===2){tagEl.textContent='人気 No.1 パック';tagEl.style.display='inline-block';}
+    else if(futonCnt>=4){tagEl.textContent='3 点パックから +'+fmt((futonCnt-3)*5000)+' 円';tagEl.style.display='inline-block';}
+    else{tagEl.style.display='none';}
+  }
+  const pcS=g('pc-single'),pcM=g('pc-multi');
+  if(pcS&&pcM){if(futonCnt===1){pcS.style.display='flex';pcM.style.opacity='.45';}else{pcS.style.display='none';pcM.style.opacity='1';}}
+  txt('f-cnt-disp',futonCnt); txt('f-cnt-label',packLabel(futonCnt)); txt('f-base-price',fmt(bp));
+  updateTotal();
+}
+function updateTotal(){
+  const bp=basePrice(futonCnt);
+  let optSum=0;
+  for(const k of['shiki','dani','mofu','hokan']){
+    const q=opts[k],sub=q*optP[k]; optSum+=sub;
+    const s=(q>0?'+':'')+fmt(sub)+' 円';
+    txt('o-'+k,q); txt('ot-'+k,s);
+    txt('f-o-'+k,q); txt('f-ot-'+k,s);
+  }
+  const grand=bp+optSum;
+  txt('grand-fig',fmt(grand));
+  txt('total-bd',packLabel(futonCnt)+(optSum>0?' + オプション計 '+fmt(optSum)+' 円':''));
+  txt('f-grand',fmt(grand));
+  const hd=g('hidden-order-details');
+  const ht=g('hidden-order-total');
+  if(hd){
+    let d=packLabel(futonCnt)+' ('+fmt(bp)+' 円)';
+    for(const k of['shiki','dani','mofu','hokan']){if(opts[k]>0)d+=' / '+optNames[k]+'×'+opts[k];}
+    hd.value=d;
+  }
+  if(ht) ht.value=fmt(grand)+' 円';
+}
+function chCnt(d){const n=futonCnt+d;if(n<1||n>10)return;futonCnt=n;update();}
+function chOpt(k,d){const n=opts[k]+d;if(n<0||n>20)return;opts[k]=n;updateTotal();}
+
+/* === DATE CONTROL === */
+const pickupInput=g('pickup-date');
+const deliveryInput=g('delivery-date');
+if(pickupInput){
+  const today=new Date();
+  today.setDate(today.getDate()+2);
+  pickupInput.min=today.toISOString().split('T')[0];
+}
+function updateDeliveryDate(){
+  if(!pickupInput||!deliveryInput)return;
+  if(pickupInput.value){
+    const pickup=new Date(pickupInput.value);
+    pickup.setDate(pickup.getDate()+8);
+    const minD=pickup.toISOString().split('T')[0];
+    deliveryInput.min=minD;
+    deliveryInput.disabled=false;
+    if(deliveryInput.value&&new Date(deliveryInput.value)<pickup)deliveryInput.value='';
+  } else {
+    deliveryInput.disabled=true;
+    deliveryInput.value='';
+  }
+}
+
+/* === FORM SUBMIT === */
+const form=g('main-form');
+if(form){
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    const btn=g('checkout-btn');
+    btn.disabled=true;
+    btn.innerHTML='送信中...';
+    updateTotal();
+    fetch(form.action,{
+      method:form.method,
+      body:new FormData(form),
+      headers:{'Accept':'application/json'}
+    }).then(res=>{
+      if(res.ok){
+        g('reservation-form-card').style.display='none';
+        g('form-success-msg').style.display='block';
+        window.location.hash='#form-section';
+      } else {
+        alert("送信に失敗しました。お手数ですがお電話にてご連絡ください。");
+        btn.disabled=false;
+        btn.innerHTML='予約を確定して送信する';
+      }
+    }).catch(()=>{
+      alert("通信エラーが発生しました。お手数ですがお電話にてご連絡ください。");
+      btn.disabled=false;
+      btn.innerHTML='予約を確定して送信する';
+    });
+  });
+}
+
+/* === FAQ === */
+function toggleFaq(btn){
+  const item=btn.closest('.faq-item');
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el=>el.classList.remove('open'));
+  if(!isOpen) item.classList.add('open');
+}
+
+/* === SCROLL REVEAL === */
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(el=>{if(el.isIntersecting){el.target.classList.add('on');obs.unobserve(el.target);}});
+},{threshold:0.06});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+/* === SMOOTH SCROLL === */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const id=a.getAttribute('href');
+    if(id==='#') return;
+    const t=document.querySelector(id);
+    if(t){
+      e.preventDefault();
+      const offset=t.getBoundingClientRect().top+window.scrollY-80;
+      window.scrollTo({top:offset,behavior:'smooth'});
+    }
+  });
+});
+
+/* === INIT === */
+update();
+</script>
+</body>
+</html>
