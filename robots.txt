@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /success.html
+Disallow: /cancel.html
+
+Sitemap: https://honey.wbrownie.com/sitemap.xml
