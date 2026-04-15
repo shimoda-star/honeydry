@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:description" content="追加料金ゼロ！自社工場の本気の手洗いで、布団の中身から新品へ復元します。往復送料込み・全国対応の宅配布団クリーニング。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://honey.wbrownie.com/">
-<meta property="og:image" content="https://honey.wbrownie.com/image/baby-main.png">
+<meta property="og:image" content="https://honey.wbrownie.com/image/baby-main.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ja_JP">
@@ -41,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Honey Dry Cleaning｜宅配布団クリーニング専門店">
 <meta name="twitter:description" content="追加料金ゼロ！自社工場の本気の手洗いで布団を新品のように復元。往復送料込みの宅配布団クリーニング。">
-<meta name="twitter:image" content="https://honey.wbrownie.com/image/baby-main.png">
+<meta name="twitter:image" content="https://honey.wbrownie.com/image/baby-main.jpg">
 
 <meta name="google-site-verification" content="KteT3_-yOHM1OdqbbwDqyDAQukbTsaIIAWWfZNUdMeY" />
 
@@ -310,7 +310,11 @@ button { font-family: 'Noto Sans JP', sans-serif; touch-action: manipulation; }
 #hero {
   position: relative;
   min-height: 70vh;
-  background: #1a3040 url('image/baby-main.png') center center / cover no-repeat;
+  background: #1a3040 url('image/baby-main.jpg') center center / cover no-repeat;
+  background-image: image-set(url('image/baby-main.webp') type('image/webp'), url('image/baby-main.jpg') type('image/jpeg'));
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   display: flex; flex-direction: column; justify-content: flex-end;
   overflow: hidden;
 }
@@ -1615,7 +1619,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="sec-h2 rv">一枚一枚に魂を込めて、<br><em>全力で洗い上げます。</em></h2>
     <div class="profile-card rv">
       <div class="profile-top">
-        <img class="profile-img" src="image/koujohcho.png" alt="工場長" loading="lazy">
+        <picture>
+          <source srcset="image/koujohcho.webp" type="image/webp">
+          <img class="profile-img" src="image/koujohcho.png" alt="工場長" loading="lazy">
+        </picture>
       </div>
       <div class="profile-body">
         <span class="profile-role">Honey Dry Cleaning — 工場 若手リーダー</span>
